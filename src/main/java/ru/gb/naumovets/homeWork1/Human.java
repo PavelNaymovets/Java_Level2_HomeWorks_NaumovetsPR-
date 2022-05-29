@@ -38,4 +38,5 @@ public class Human implements Participants{
     public boolean getPhysicalCapacity() {
         return physicalCapacity;
     }
+
 }

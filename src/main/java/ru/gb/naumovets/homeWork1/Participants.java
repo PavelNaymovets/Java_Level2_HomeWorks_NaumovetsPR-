@@ -18,7 +18,9 @@ public interface Participants {
             }
         }
     }
+
     void jump(Wall obstacle);
     void run(RunningTrack obstacle);
     boolean getPhysicalCapacity();
+
 }
