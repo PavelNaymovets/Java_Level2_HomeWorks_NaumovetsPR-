@@ -11,9 +11,9 @@ public interface Participants {
     default void getOverObstacle(Obstacle obstacle){
         //Если участник имеет физическую возможность преодолеть препятствие, то он это сделает. Иначе - нет.
         if(getPhysicalCapacity()){
-            if(obstacle.getClass() == (Wall.class)){
+            if(obstacle.getClass() == Wall.class){
                 jump((Wall) obstacle);
-            } else if(obstacle.getClass() == (RunningTrack.class)){
+            } else if(obstacle.getClass() == RunningTrack.class){
                 run((RunningTrack) obstacle);
             }
         }
