@@ -15,4 +15,5 @@ public class Wall implements Obstacle{
     public int getHeight(){
         return height;
     }
+
 }
