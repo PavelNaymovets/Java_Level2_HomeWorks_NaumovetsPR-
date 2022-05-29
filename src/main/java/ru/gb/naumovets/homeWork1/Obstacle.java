@@ -1,4 +1,4 @@
 package ru.gb.naumovets.homeWork1;
 
-public class HomeWork1 {
+public interface Obstacle {
 }
