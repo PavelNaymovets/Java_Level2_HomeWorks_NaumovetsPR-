@@ -1,4 +1,4 @@
 package ru.gb.naumovets.infoFromLessons;
 
-public class Lesson1 {
+public class Main {
 }
