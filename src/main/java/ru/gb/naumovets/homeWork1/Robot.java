@@ -38,4 +38,5 @@ public class Robot implements Participants{
     public boolean getPhysicalCapacity() {
         return physicalCapacity;
     }
+
 }

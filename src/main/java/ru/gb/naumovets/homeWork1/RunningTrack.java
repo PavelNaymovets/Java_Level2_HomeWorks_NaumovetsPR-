@@ -15,4 +15,5 @@ public class RunningTrack implements Obstacle{
     public int getLength(){
         return length;
     }
+
 }
