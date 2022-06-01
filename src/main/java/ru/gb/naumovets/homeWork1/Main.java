@@ -24,6 +24,7 @@ public class Main {
                 participant.getOverObstacle(obstacle);
             }
         }
+
     }
 
 }
