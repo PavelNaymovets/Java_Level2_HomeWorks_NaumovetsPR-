@@ -5,7 +5,7 @@ public class MyArray {
         Метод принимает на вход двумерный массив и возвращает сумму элементов этого массива. Если размер массива
         не 4Х4 или в массив переданы данные не типа int, выбрасывается соответствующее исключение.
     */
-    public static void DoubleArray(String[][] arr) throws MyArraySizeException, MyArrayDataException {
+    public static void doubleArray(String[][] arr) throws MyArraySizeException, MyArrayDataException {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr.length != 4) {
