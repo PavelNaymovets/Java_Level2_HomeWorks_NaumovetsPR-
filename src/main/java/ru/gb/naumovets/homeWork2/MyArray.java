@@ -1,6 +1,8 @@
 package ru.gb.naumovets.homeWork2;
 
 public class MyArray {
+    //Размер квадратного массива, который должен быть передан в метод. В данном случае 4х4
+    private final static int ARRAY_SIZE = 4;
     /*
         Метод принимает на вход двумерный массив и возвращает сумму элементов этого массива. Если размер массива
         не 4Х4 или в массив переданы данные не типа int, выбрасывается соответствующее исключение.
@@ -8,11 +10,11 @@ public class MyArray {
     public static void DoubleArray(String[][] arr) throws MyArraySizeException, MyArrayDataException {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr.length != 4) {
+            if (arr.length != ARRAY_SIZE) {
                 throw new MyArraySizeException();
             }
             for (int j = 0; j < arr[i].length; j++) {
-                if (arr[i].length != 4) {
+                if (arr[i].length != ARRAY_SIZE) {
                     throw new MyArraySizeException();
                 }
                 try {
