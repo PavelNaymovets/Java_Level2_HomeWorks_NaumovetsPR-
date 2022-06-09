@@ -38,4 +38,5 @@ public class Cat implements Participants{
     public boolean getPhysicalCapacity() {
         return physicalCapacity;
     }
+
 }
