@@ -1,9 +1,6 @@
 package ru.gb.naumovets.infoFromLessons.Collections;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PhoneBook {
     //Решение задачи с телефонным справочником с получением и добавлением нового значения номеров по имени за константное время
@@ -15,6 +12,18 @@ public class PhoneBook {
         //Каждый раз перезаписываем список номеров в мапе phones, когда добавляем новый номер к существующему имени(ключу)
         //так как не создан отдельный класс в котором можно было бы переопределить методы .equals() и
         phones.put(name, phoneList);
+
+        /*
+
+        Решение через .merge()
+
+        phones.merge(name, new ArrayList<>(Arrays.asList(phone)),(prev, curr) -> {
+            prev.addAll(curr);
+            return prev;
+        });
+
+         */
+
     }
 
     List<String> get(String name){
